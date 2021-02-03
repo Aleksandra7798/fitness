@@ -13,6 +13,19 @@ require 'handlers/CustomerHandler.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submitBtn"])) {
     $errors_ = null;
 
+    $tel = null;
+    if (!empty($_POST["newPhone"])) {
+        if (strlen($_POST["newPhone"]) < 9) {
+            $errors_ .= Util::displayAlertV1("Wymagane są co najmniej 9 znaki.", "info");
+        } else {
+            $tel = $_POST["newPhone"];
+        }
+    } else {
+        if (isset($_SESSION["phone"])) {
+            $tel = $_SESSION["phone"];
+        }
+    } 
+
     $pwd = null;
     if (!empty($_POST["newPassword"])) {
         if (strlen($_POST["newPassword"]) < 4) {
@@ -32,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submitBtn"])) {
         $c = new Customer();
         $c->setId($_POST["cid"]);
         $c->setFullName($_POST["fullName"]);
-        $c->setPhone($_POST["phone"]);
+        $c->setPhone($tel);
         $c->setEmail($_POST["email"]);
         $c->setPassword($pwd);
 
@@ -43,8 +56,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submitBtn"])) {
         if (isset($_SESSION["username"])) {
             $_SESSION["username"] = $cHandler->getUsername($_POST["email"]);
         }
-        if (isset($_SESSION["phoneNumber"])) {
-            $_SESSION["phoneNumber"] = $_POST["phone"];
-        }
+        
     }
 }

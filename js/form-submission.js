@@ -42,7 +42,7 @@ const formData = {
     return {
       cid: $('input[name="customerId"]').val(),
       fullName: $('input[name="updateFullName"]').val(),
-      phone: $("input[name='updatePhoneNumber']").val(),
+      newPhone: $("input[name='updatePhoneNumber']").val(),
       email: $("input[name='updateEmail']").val(),
       newPassword: $("input[name='updatePassword']").val(),
       submitBtn: $('input[name="updateProfileSubmitBtn"]').val()
@@ -131,11 +131,11 @@ const updateProfileSubmit = function () {
   let reloadAnimation = (animContainer) => {
     animContainer.prepend(
       `<div class="form-group">
-            <div id="path"><div id="brick"></div></div><span>Ponowne załadowanie strony, poczekaj 5 sekund.</span>
+            <div id="path"><div id="brick"></div></div><span>Ponowne załadowanie strony, poczekaj kilka sekund.</span>
         </div>`);
     
     animate({
-      duration: 5000,
+      duration: 4000,
       timing: function (timeFraction) {
         return Math.pow(timeFraction, 2);
       },
@@ -147,6 +147,7 @@ const updateProfileSubmit = function () {
     });
   };
 };
+
 
 $(document).ready(function () {
   $(formIds.register).submit(function (event) {
