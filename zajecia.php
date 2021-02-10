@@ -252,7 +252,7 @@ session_start();
             <li>Złagodzenie bólu i objawów chorób</li>
             <li>Poprawienie regulacji pracy serca i ciśnienia krwi </li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 30 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 15 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h </span>
       </div>
     </div>
@@ -269,7 +269,7 @@ session_start();
             <li>Odciążenie kręgosłupa </li>
             <li>Ćwiczenia dla każdego niezależnie od wieku</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 25 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 10 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h </span>
       </div>
     </div>
@@ -286,7 +286,7 @@ session_start();
             <li>Skuteczna utrata kalorii</li>
             <li>Poprawa kondycji fizycznej</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 30 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 12 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h</span>
       </div>
     </div>
@@ -305,7 +305,7 @@ session_start();
             <li>Spory wydatek energetyczny podczas treningu</li>
             <li>Przyśpieszenie metabolizmu</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 30 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 20 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h</span>
       </div>
     </div>
@@ -322,7 +322,7 @@ session_start();
             <li>Wyrzeźbiony brzuch, mocne zgrabne pośladki</li>
             <li>Pomaga w walce z cellulitem</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 30 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 20 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h</span>
       </div>
     </div>
@@ -339,7 +339,7 @@ session_start();
             <li>Poprawa ruchomości stawów</li>
             <li>Doskonała forma aktywności dla kobiet w ciąży</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 25 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 15 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h </span>
       </div>
     </div>
@@ -357,7 +357,7 @@ session_start();
             <li>Skuteczne spalenie tłuszczu i kształtowanie sylwetki</li>
             <li>Doskonała forma aktywności dla kobiet w ciąży</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 20 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 10 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h </span>
       </div>
     </div>
@@ -390,7 +390,7 @@ session_start();
             <li>Wykonywane bardzo precyzyjnie, powoli i dokładnie.</li>
             <li>Prowadzone przy spokojnej muzyce, która ma odprężyć.</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 25 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 10 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h </span>  
       </div>
     </div>
@@ -408,7 +408,7 @@ session_start();
             <li>Uczy umiejętności przezwyciężania zmęczenia i bólu.</li>
             <li>Poprawia wytrzymałość i elastyczność.</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 30 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 20 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h </span> 
       </div>
     </div>
@@ -424,7 +424,7 @@ session_start();
             <li>Systematycznie wykonywanie prowadzi do zwiększenia siły generowanej przez mięśnie oraz wzrostu masy mięśniowej</li>
             <li>Poprawia koordynację ruchową oraz gibkość</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 25 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 20 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h </span> 
       </div>
     </div>
@@ -441,7 +441,7 @@ session_start();
             <li>Uelastycznienie mięśni i ścięgien</li>
             <li>Fundamentem ćwiczeń jest wyprostowana postawa</li>
           </ul>
-          <span class="badge bg-warning text-dark" style="float:right">Cena: 25 zł</span> <br/>
+          <span class="badge bg-warning text-dark" style="float:right">Cena: 12 zł</span> <br/>
           <span class="badge bg-warning text-dark" style="float:right">Czas trwania: 1h </span> 
       </div>
     </div>
@@ -676,7 +676,7 @@ session_start();
                                 <div class="form-group">
                                     <input type="submit" class="btn btn-warning btn-md float-right"
                                            name="updateProfileSubmitBtn" value="Zmień">
-                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
                                 </div>
                             </form>
                             <?php } ?>
