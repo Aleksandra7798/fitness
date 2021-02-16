@@ -80,15 +80,15 @@ class CustomerHandler extends CustomerDAO
 
     public function insertCustomer(Customer $customer)
     {
-        // insert if value is 0, which means this Customer's email still not registered
+        //jeśli wartość wynosi 0, co oznacza, że email tego klienta nadal nie jest zarejestrowany
         if ($this->isCustomerExists($customer->getEmail()) == 0) {
             if ($this->insert($customer)) {
-                $this->setExecutionFeedback("Zarejestrowałeś się! Teraz możesz się zalogować.");
+                $this->setExecutionFeedback("Zarejestrowałeś się! Zostało Ci utworzone konto klienta. Teraz możesz się zalogować!");
             } else {
                 $this->setExecutionFeedback(Util::DB_SERVER_ERROR);
             }
         } else {
-            $this->setExecutionFeedback("Email już zarejestrowany.");
+            $this->setExecutionFeedback("E-mail już zarejestrowany. Proszę o wpisanie innego adresu.");
         }
     }
 

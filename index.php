@@ -383,9 +383,9 @@ session_start();
                                     <div class="col-sm-9">
                                         <select class="custom-select mr-sm-2" isForTest="false" name="service">
                                             <option selected value="-">-</option>
-                                            <option value="<?php echo \models\RequirementEnum::JEDZENIE_NAPOJE; ?>">Jedzenie/napoje</option>
                                             <option value="<?php echo \models\RequirementEnum::SZATNIA; ?>">Szatnia</option>
                                             <option value="<?php echo \models\RequirementEnum::MASAZ; ?>">Masaż</option>
+                                            <option value="<?php echo \models\RequirementEnum::DIETETYK; ?>">Dietetyk</option>
                                             <option value="<?php echo \models\RequirementEnum::SAUNA; ?>">Sauna</option>
                                             <option value="<?php echo \models\RequirementEnum::BASEN; ?>">Basen</option>
                                         </select>
@@ -411,7 +411,7 @@ session_start();
                                     <label class="col-sm-3 col-form-label font-weight-bold" for="treningPrice">Cena treningu <i class="fas fa-money-bill-alt"></i></label>
                                     <div class="col-sm-9 treningPriceTxt">45.00</div>
                                 </div>
-                                <p class="font-weight-bold">Podsumowanie:</p>
+                                <p class="font-weight-bold">Podsumowanie karnetu:</p>
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label font-weight-bold" for="numHours"><span class="numHoursTxt">3</span> godziny  <i class="fas fa-clock"></i></label>
                                     <div class="col-sm-9">

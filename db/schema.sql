@@ -41,20 +41,17 @@ CREATE TABLE `reservation`
     `type`        ENUM ('Joga','Pilates','Zumba','Trening obwodowy','Body pump','FitBall','Aerobik','Aqua Aerobik','Zdrowy kręgosłup','FitBoxing','Kalistenika','Brzuch + stretch')              DEFAULT 'Joga',
     `requirement` ENUM ('Grupowy', 'Indywidualny') DEFAULT 'Grupowy',
     `cadre`       ENUM ('Brak', 'Trener personalny','Instruktor') DEFAULT 'Brak',
-    `service`     ENUM ('Brak', 'Jedzenie/napoje', 'Szatnia', 'Masaż', 'Sauna', 'Basen') DEFAULT 'Brak',
+    `service`     ENUM ('Brak', 'Szatnia', 'Masaż', 'Dietetyk', 'Sauna', 'Basen') DEFAULT 'Brak',
     `memo`    varchar(500)                                     DEFAULT NULL,
     `timestamp`   timestamp           NOT NULL                     DEFAULT CURRENT_TIMESTAMP,
     `hash`        varchar(100)                                     DEFAULT NULL
 );
 
-# Constraints
---
+--ograniczenia--
 ALTER TABLE `booking`
     ADD CONSTRAINT `booking_customer__fk` FOREIGN KEY (`cid`) REFERENCES `customer` (`cid`) ON DELETE CASCADE;
 
---
--- Constraints for table `reservation`
---
+
 ALTER TABLE `reservation`
     ADD CONSTRAINT `reservation_booking__fk` FOREIGN KEY (`id`) REFERENCES `booking` (`id`) ON DELETE CASCADE;
 

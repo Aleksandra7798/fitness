@@ -227,15 +227,6 @@ session_start();
 </section>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card">
-      <img id="uslugi" src="image/napojejedzenie.jpg" class="card-img-top" width="400" height="320" alt="Jedzenie oraz napoje"/>
-      <div  class="card-body">
-        <h5 class="card-title">Jedzenie oraz napoje</h5>
-           <p>Nasz klub posiada miejsce, gdzie będziesz mógł się napić zdrowych soków, energetycznych koktajli oraz zamówić jakiś mały posiłek, przekąske.</p>
-      </div>
-    </div>
-  </div>
 
   <div class="col">
     <div class="card">
@@ -255,6 +246,16 @@ session_start();
         <h5 class="card-title">Szatnia</h5>
         <p>Miejsce, gdzie będziesz mógł zostawić swoje ubrania. Przebrać się w odzież sportową lub strój kąpielowy. Przy szatni dołączona jest 
         łazienka, gdzie znajdują się prysznice.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card">
+      <img id="uslugi" src="image/dietetyk.jpg" class="card-img-top" width="400" height="320" alt="Dietetyk"/>
+      <div  class="card-body">
+        <h5 class="card-title">Dietetyk</h5>
+           <p>Nasz klub posiada konsultacje dietetyczne, gdzie dowiesz się o składzie swoje ciała oraz o prawidłowych sposobach odżywiania.</p>
       </div>
     </div>
   </div>
@@ -286,7 +287,7 @@ session_start();
       <img id="uslugi" src="image/sklep.jpg" class="card-img-top" width="400" height="320" alt="Sklep"/>
       <div class="card-body">
         <h5 class="card-title">Sklep</h5>
-        <p>Miejsce, gdzie będziesz mógł kupić dodatkowe rzeczy, takie jak: akcesoria treningowe, koszulki, poradniki, itd.</p>
+        <p>Miejsce, gdzie będziesz mógł kupić dodatkowe rzeczy, takie jak, np. akcesoria treningowe oraz coś do jedzenia.</p>
       </div>
     </div>
   </div>
@@ -391,9 +392,9 @@ session_start();
                                     <div class="col-sm-9">
                                         <select class="custom-select mr-sm-2" isForTest="false" name="service">
                                             <option selected value="-">-</option>
-                                            <option value="<?php echo \models\RequirementEnum::JEDZENIE_NAPOJE; ?>">Jedzenie/napoje</option>
                                             <option value="<?php echo \models\RequirementEnum::SZATNIA; ?>">Szatnia</option>
                                             <option value="<?php echo \models\RequirementEnum::MASAZ; ?>">Masaż</option>
+                                            <option value="<?php echo \models\RequirementEnum::DIETETYK; ?>">Dietetyk</option>
                                             <option value="<?php echo \models\RequirementEnum::SAUNA; ?>">Sauna</option>
                                             <option value="<?php echo \models\RequirementEnum::BASEN; ?>">Basen</option>
                                         </select>
@@ -419,7 +420,7 @@ session_start();
                                     <label class="col-sm-3 col-form-label font-weight-bold" for="treningPrice">Cena treningu <i class="fas fa-money-bill-alt"></i></label>
                                     <div class="col-sm-9 treningPriceTxt">45.00</div>
                                 </div>
-                                <p class="font-weight-bold">Podsumowanie:</p>
+                                <p class="font-weight-bold">Podsumowanie karnetu:</p>
                                 <div class="form-group row align-items-center">
                                     <label class="col-sm-3 col-form-label font-weight-bold" for="numHours"><span class="numHoursTxt">3</span> godziny  <i class="fas fa-clock"></i></label>
                                     <div class="col-sm-9">

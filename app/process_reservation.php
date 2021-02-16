@@ -26,10 +26,7 @@ require 'handlers/BookingReservationHandler.php';
     if (empty($_POST["type"])) {
         $errors_ .= Util::displayAlertV1("Wybierz rodzaj treningu.", "info");
     }
-    if (empty($_POST["cadre"])) {
-        $errors_ .= Util::displayAlertV1("Wybierz kadre, jeśli chcesz.", "info");
-    }
-
+   
     try {
         $startDate = new DateTime($_POST["start"]);
         $endDate = new DateTime($_POST["end"]);

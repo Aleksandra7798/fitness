@@ -7,7 +7,6 @@ class BookingDetailDAO
     {
     }
 
-    // use this in admin.php
     protected function fetchBooking()
     {
         $sql = 'SELECT
