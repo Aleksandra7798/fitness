@@ -5,7 +5,6 @@ class BookingDetailHandler extends BookingDetailDAO
     public function __construct()
     {
     }
-
     private $executionFeedback;
 
     public function getExecutionFeedback()

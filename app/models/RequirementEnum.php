@@ -24,9 +24,9 @@ abstract class RequirementEnum
     const BRZUCH_STRETCH = "Brzuch + stretch";
 
     //dodatkowe uslugi
-    const JEDZENIE_NAPOJE = "Jedzenie/napoje";
     const SZATNIA = "Szatnia";
     const MASAZ = "Masaż";
+    const DIETETYK = "Dietetyk";
     const SAUNA = "Sauna";
     const BASEN = "Basen";
 }

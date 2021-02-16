@@ -90,7 +90,7 @@ const clickSignOut = function () {
       let homePageLink = locHref.substring(0, locHref.lastIndexOf('/')) + '/index.php';
       window.location.replace(homePageLink);
     } else {
-      alert('błąd podczas wylogowania');
+      alert('Błąd podczas wylogowania');
     }
   });
 };

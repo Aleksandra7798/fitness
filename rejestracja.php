@@ -65,6 +65,7 @@ if (isset($_SESSION["authenticated"]))
 
                                 <div class="form-group">
                                     <label for="registrationPhoneNumber" style="color:white">Numer telefonu</label>
+                                    <span class="red-asterisk"> * </span>
                                     <input type="text" class="form-control"
                                            id="registrationPhoneNumber"
                                            name="registrationPhoneNumber"

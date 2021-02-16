@@ -3,8 +3,6 @@
 ob_start();
 session_start();
 
-
-
 require 'DB.php';
 require 'Util.php';
 require 'dao/CustomerDAO.php';
@@ -25,37 +23,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submitBtn"])) {
     }
     if (!empty($errors_)) {
         echo $errors_;
-    } else {
-
-       
+    } 
+    
+    else {
         $adminHandler = new AdminHandler();
         $admin = new Admin();
-       
         $admin->setEmail($_POST["email"]);
         $adminId = ($adminHandler->getObjectUtil($admin->getEmail())->getAdminId());
-
-        if ($adminId > 1 || intval($adminId) > 0) {
+         if ($adminId > 1 || intval($adminId) > 0) {
             $_SESSION["username"] = $_POST["email"];
             $_SESSION["accountEmail"] = $_POST["email"];
             $_SESSION['isAdmin'] = 1;
-            echo $_SESSION['isAdmin'];
-        }
-         else {
-            $handler = new CustomerHandler();
-            $customer = new Customer();
-            $customer->setEmail($_POST["email"]);
+            echo $_SESSION['isAdmin'];} 
 
-            $newCustomer = new Customer();
-            if (!$handler->isPasswordMatchWithEmail($_POST['password'], $customer)) {
+    else {
+        $handler = new CustomerHandler();
+        $customer = new Customer();
+        $customer->setEmail($_POST["email"]);
+        $newCustomer = new Customer();
+         if (!$handler->isPasswordMatchWithEmail($_POST['password'], $customer)) {
                 echo Util::displayAlertV1("Niepoprawne hasło.", "warning");
-            } 
-            else {
+            } else {
                 $_SESSION["username"] = $handler->getUsername($_POST["email"]);
                 $_SESSION["accountEmail"] = $customer->getEmail();
                 $_SESSION["authenticated"] = 1;
                 $_SESSION["password"] = $_POST["password"];
 
-                // set the session phone number too
                 if ($handler->getCustomerObj($_POST["email"])->getPhone()) {
                     $_SESSION["phoneNumber"] = $handler->getCustomerObj($_POST["email"])->getPhone();
                 }

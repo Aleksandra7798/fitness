@@ -6,8 +6,6 @@ class AdminHandler extends AdminDAO
     public function __construct()
     {
     }
-
-
     private $executionFeedback;
 
     public function getExecutionFeedback()
